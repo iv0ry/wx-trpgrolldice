@@ -1,0 +1,145 @@
+.toast-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.toast-out .toast-in {
+  min-width: 200px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px;
+  text-align: center;
+  color: white;
+  border-radius: 16px;
+}
+.toast-out .toast-in span {
+  font-size: 60px;
+}
+.toast-out .toast-in .toast-txt {
+  font-size: 28px;
+}
+
+
+
+
+
+
+
+.btn {  
+  width: 80%;  
+  padding: 20px 0;  
+  border-radius: 10px;  
+  text-align: center;  
+  margin: 40px 10%;  
+  background: #000;  
+  color: #fff;  
+}  
+  
+/*mask*/  
+.drawer_screen {  
+  width: 100%;  
+  height: 100%;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  z-index: 1000;  
+  background: #000;  
+  opacity: 0.5;  
+  overflow: hidden;  
+}  
+  
+/*content*/  
+.drawer_box {  
+  width: 650px;  
+  overflow: hidden;  
+  position: fixed;  
+  top: 50%;  
+  left: 0;  
+  z-index: 1001;  
+  background: #fff;  
+  margin: -300px 50px 0 50px;  
+  border: 1px solid #71c39a;
+}  
+  
+.drawer_title{  
+  background: #71c39a;
+  
+  
+  
+  
+  
+  color: #fff;
+  text-shadow: 0 2px 0 #555555;
+  text-transform: uppercase;
+  font-size: 14pt;
+  
+  padding:30px;  
+  font: 40px "microsoft yahei";  
+  text-align: center;  
+}  
+.drawer_content {  
+  height: 200px;  
+  overflow-y: scroll; /*超出父盒子高度可滚动*/  
+}  
+  
+.btn_ok{  
+  padding: 20px;  
+  font: 40px "microsoft yahei";  
+  text-align: center;  
+  border-top: 2px solid #E8E8EA;  
+  color: #71c39a;  
+}  
+  
+ 
+.bottom {  
+    padding-bottom:16px;  
+}  
+.statname {  
+    color: #666;  
+    width: 230px;  
+    text-align: center;  
+    display: flex; 
+    padding: 50px 50px 50px 50px;
+    font: 80px "microsoft yahei";  
+}  
+  
+.input_base {  
+    color: #ccc;  
+    display:flex;
+    height: 160px;
+    text-align: center;  
+    overflow: auto;
+    font-size: 130px;  
+    background: #fff;  
+    margin: 20px 20px 20px 20px;
+    border: 2px solid #71c39a;  
+    
+}  
+.input_h30{  
+    height: 60px;  
+    line-height: 60px;  
+}  
+.input_h60{  
+    height: 120px;  
+}  
+.input_view{  
+      
+    background: #fff;  
+    color:#000;  
+      
+}  
+  
+  
+radio{  
+    margin-right: 40px;  
+}  
+.grid { display: -webkit-box; display: box; }  
+.col-0 {-webkit-box-flex:1;box-flex:1;}  
+.col-1 {-webkit-box-flex:2;box-flex:2;}  
+.fl { float: left;}  
+.fr { float: right;}

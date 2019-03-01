@@ -1,0 +1,447 @@
+@import '../libs/common.scss';
+@import '../libs/logs.scss';
+
+
+/* 主容器 */
+.container {
+  
+  padding: 20px 20px 20px 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* 角色卡部分 */
+.sheet_basic{
+  
+  background-color: #ECF0F1;
+  margin:20px 20px 20px 20px;
+  flex-direction: column;
+  
+  display: flex;
+  
+}
+.good-body {
+	padding: 0px 0px;
+  
+}
+.good-item{
+	padding: 0px 0px;
+	float: left;
+}
+.three{
+	width: 33.3%;
+}
+.two{
+	width: 50%;
+}
+.good-desc{
+  flex: 1;
+  
+  text-align: center;
+  
+  
+  border: 1px solid #71c39a;
+  border-collapse: collapse;
+}
+.sheet_name{
+  color: #b5b5b5;
+  position:relative;
+  bottom: 0px;
+  left: 5px;
+}
+.sheet_Value{
+  color: #664;
+  position:  relative;
+  left: 0px;
+  top:0px;
+  font-size:  100px;
+  height: 100px;
+  z-index: 0
+}
+/*.sheet_basic{
+  
+  background-color: #ECF0F1;
+  margin:20rpx 20rpx 20rpx 20rpx;
+  flex-direction: column;
+  
+  display: flex;
+  
+}
+.sheet_stat_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 13vh;
+  
+}
+.sheet_statCell{
+  flex: 1;
+  display:   flex;
+  text-align: center;
+  border: 1rpx solid #71c39a;
+  border-collapse: collapse;
+}
+.sheet_stat{
+  flex: 1;
+  
+  text-align: center;
+  
+  
+  border: 1rpx solid #71c39a;
+  border-collapse: collapse;
+}
+.sheet_stat0{
+  color: #b5b5b5;
+  position:relative;
+  bottom: -45rpx;
+  left: 5rpx;
+}
+.sheet_statValue{
+  color: #666;
+  position:  relative;
+  left: 0rpx;
+  top:20rpx;
+  font-size:  100rpx;
+  height: 100rpx
+}*/
+
+
+/* 掷骰框部分 */
+.result{
+  display:inline;
+  padding:0.3em 1.5em;
+  
+  box-shadow: inset 0 0 80px 0 rgba(107, 66, 12, 0.3), inset 0 0 6px 2px rgba(68, 84, 93, 0.2);
+  background: rgba(29, 101, 173, 0.1);
+  opacity:0.6;
+  text-align:left;
+  vertical-align:middle;
+
+}
+.name{
+  text-align: center
+}
+.num{
+  text-align: right;
+  
+  width: 360px;
+  
+  
+
+  display: flex;
+  justify-content: space-between;
+  
+  
+  font-size: 150px;
+  color: #777;
+  
+}
+.x{
+  padding-right: 100px;
+  margin: 0px 0px 0px 300px;
+}
+
+.equation{
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin-top: -240px;
+  margin-left: -50px;
+  color: #b5b5b5
+;
+}
+.dele{
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 0px;
+  box-shadow: 0 0 5px #e0e0e0;
+  margin-bottom: 20px;
+  
+
+  text-align: center;
+  padding: 100px;
+  margin-left: 20px
+
+
+}
+.result{
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  color: #3f4250;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  opacity: 0.6;
+  text-align: center;
+  vertical-align: middle;
+
+}
+/* 输入框 */
+.header {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 0px;
+  box-shadow: 0 0 0px #e0e0e0;
+  margin-bottom: 0px;
+  padding: 20px;
+  background-color: #ECF0F1
+}
+
+.header .plus {
+  width: 41px;
+  height: 41px;
+  margin-right: 20px;
+}
+
+.header .board {
+  width: 41px;
+  height: 41px;
+  margin-left: 20px;
+}
+
+.header .new-todo {
+  flex: 1;
+  font-size: 28px;
+}
+/* 骰子组列表 */
+.todos {
+  border: 1px solid #e0e0e0;
+  border-radius: 0px;
+  box-shadow: 0 0 0px #e0e0e0;
+  background-color: #ECF0F1
+}
+
+.todos .item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.todos .item:last-child {
+  border-bottom: 0;
+}
+
+.todos .item .name {
+  flex: 1;
+  font-size: 30px;
+  color: #444;
+}
+
+.todos .item.completed .name {
+  text-decoration: underline;
+  color: #888;
+}
+
+.todos .item .checkbox {
+  margin-right: 10px;
+}
+
+.todos .item .remove {
+  cursor: pointer;
+}
+/* 无骰子时显示 */
+.dice-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  padding: 0 10px;
+  font-size: 26px;
+  color: #777;
+}
+
+.dice-footer .btn {
+  cursor: pointer;
+}
+
+.dice-empty {
+  border: 1px solid #71c39a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px 50px;
+}
+
+.dice-empty .title {
+  font-size: 60px;
+  
+  color: #444;
+}
+
+.dice-empty .content {
+  color: #666;
+  text-align: center;
+}
+
+
+
+/* 模板 */
+@import '../libs/template.scss';
+
+.navigator-box {
+  
+
+  opacity: 0;
+  position: relative;
+  
+  line-height: 1.41176471;
+  font-size: 34px;
+
+  transform: translateY(-50%);
+  transition: .3s;
+}
+.navigator-box-show {
+  
+  border: 1px solid #e0e0e0;
+  border-radius: 0px;
+  box-shadow: 0 0 5px #e0e0e0;
+  
+
+  opacity: 1;
+  transform: translateY(0);
+}
+.navigator-text {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+
+
+
+
+
+/* 下拉菜单样式 */
+.kind-list-item {
+  margin: 0px 0;
+  
+  border-radius: 0px;
+  overflow: hidden;
+}
+.kind-list-item:first-child {
+  margin-top: 0;
+}
+.kind-list-text{
+  flex: 1;
+}
+
+.kind-list-item-hd {
+  
+}
+.kind-list-item-hd-show {
+  opacity: .2;
+}
+.kind-list-item-bd {
+  height: 0;
+  overflow: hidden;
+}
+.kind-list-item-bd-show {
+  height: auto;
+}
+/*底栏*/
+.bf-footer{height: 176px;}
+.timefooter{
+  position: fixed;
+  bottom: 88px;
+  height: 88px;
+  width: 100%;
+  line-height: 88px;
+  color: #666;
+  border-top: 2px solid #eee;
+  background: #fff;
+  font-size: 32px;
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 88px;
+  width: 100%;
+  line-height: 88px;
+  color: #666;
+  border-top: 2px solid #eee;
+  background: #fff;
+  font-size: 32px;
+  text-align: center;
+  /* border-style: groove;
+  border-top-width: 12px;
+  border-top-color: #71c39a;
+  border-radius: 50rpx */
+}
+.remove-done,.setting {
+  color: #71c39a;
+  padding: 0 24px;
+  position: absolute;
+}
+.remove-done {
+  right: 0;
+  display:   inline
+}
+.setting {
+  left: 0;
+}
+
+
+
+
+
+
+
+/* 弃用
+
+
+/* 导航栏 
+.navtop{
+  padding: 30rpx;
+}
+.navbar {
+  padding: 20rpx 400rpx 20rpx 00rpx;
+  border: 0rpx;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50rpx;
+  font-weight: 10;
+}
+.corncer-topleft{
+  float:left;
+  height: 75rpx;
+  width: 75rpx;
+  margin: 0rpx -70rpx 0 0;
+  padding: -10rpx;
+}
+.corncer-bottomleft{
+  float:left;
+  height: 75rpx;
+  width: 75rpx;
+  margin: 305rpx -70rpx 0 0;
+  padding: -10rpx;
+  transform:rotate(-90deg);
+}
+.corncer-topright{
+  
+  height: 75rpx;
+  width: 75rpx;
+  margin: 0rpx -70rpx 0rpx 0rpx;
+  padding: -10rpx;
+  transform:rotate(90deg);
+  position:fixed;
+  left:660rpx
+}
+.corncer-bottomright{
+  
+  height: 75rpx;
+  width: 75rpx;
+  margin: 305rpx -70rpx 0 -170rpx;
+  padding: -10rpx;
+  transform:rotate(180deg);
+  position:fixed;
+  left:830rpx
+}
+
+*/

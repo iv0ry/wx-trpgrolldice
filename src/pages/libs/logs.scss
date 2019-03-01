@@ -1,0 +1,93 @@
+@import './common.scss';
+
+.text_afimgtitle {
+  text-align: center;
+  color: #444;
+  margin: 80px 20px 20px 20px;
+  height: 20px;
+  line-height: 3;
+  font-size: 30px;
+  padding:2px 60px 60px 60px;
+
+
+  border: 1px solid #71c39a;
+}
+
+.box_img_avatar {
+  display: flex;
+  flex-direction: row;
+}
+
+.img_avatar {
+  border-radius: 50%;
+  width: 256px;
+  height: 256px;
+  margin: 20px;
+}
+
+.btn_box2 {
+  display: flex;
+  flex-direction: row;
+}
+.textbox{
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.267);
+  border-radius: 10px;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  color: #666;
+  font-size: 35px;
+}
+
+.text_afbtn {
+  text-align: center;
+  color: #666;
+  margin: 8px 19px;
+  line-height: 3;
+  font-size: 30px;
+}
+
+.navbar {
+  padding: 70px;
+  border: 0px;
+}
+
+.container {
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.logs {
+  border: 1px solid #e0e0e0;
+  border-radius: 0px;
+  box-shadow: 0 0 5px #e0e0e0;
+}
+
+.item {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 30px;
+  color: #888;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.timestamp {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.name {
+  display: inline-block;
+  width: 380px;
+  color: #aa0;
+}
+
+.action {
+  display: inline-block;
+  width: 280px;
+  color: #f40;
+  text-align: right;
+}

@@ -1,0 +1,66 @@
+/*  */
+
+view {
+}
+
+/* 按钮 */
+
+.btn_border {
+  border: 2px solid #71c39a;
+  background: #fff;
+  margin: 8px 19px;
+  font-size: 30px;
+}
+
+.btn_fill {
+  background: #71c39a;
+  border: 2px solid #71c39a;
+  color: #fff;
+  text-shadow: none;
+  margin: 8px 19px;
+  border-width: 2px;
+  font-size: 30px;
+  line-height:3;
+
+}
+
+.widget-navbar {
+  position: absolute;
+  left: 20px;
+  padding: 0px 20px 0px 20px;
+  height: 70px;
+  background-color: #87f3bb46;
+  border: 1px solid #71c39a;
+  color: rgb(238, 222, 222);
+  border-radius: 100px
+}
+
+/* 框类型 */
+
+.blank_block {
+  padding: 20px 20px 20px 20px;
+}
+
+.container_box {
+  border: 1px solid #71c39a;
+  border-radius: 0px;
+  box-shadow: 0 0 0px #71c39a;
+  background-color: #fff;
+  padding: 20px 20px 20px 20px;
+}
+
+/*插件头部*/
+
+.widget-head {
+  background: #71c39a;
+  border: 2px solid #71c39a;
+  display: block;
+  text-align: center;
+  float: none;
+  line-height: 72px;
+  height: 72px;
+  color: #fff;
+  text-shadow: 0 2px 0 #555;
+  text-transform: uppercase;
+  font-size: 14pt;
+}
